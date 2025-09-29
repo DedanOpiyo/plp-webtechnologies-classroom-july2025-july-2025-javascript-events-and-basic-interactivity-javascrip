@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Page - Part 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to Interactive Web Page (Part 2)</h1>
+
+  <!-- Button for click event -->
+  <button id="clickButton">Click me!</button>
+  <p id="clickMessage" class="hidden">You clicked the button!</p>
+
+  <!-- Div for mouseover event -->
+  <div id="hoverBox">Hover over me!</div>
+  <p id="hoverMessage" class="hidden">Thanks for hovering!</p>
+
+  <!-- Input for keyboard event -->
+  <label for="nameInput">Type your name: </label>
+  <input type="text" id="nameInput" />
+  <p id="greeting" class="hidden"></p>
+
+  <!-- Part 2: Light/Dark Mode Toggle -->
+  <hr />
+  <h2>Light / Dark Mode Toggle</h2>
+  <button id="modeToggle">Switch to Dark Mode</button>
+
+  <!-- Part 2: Collapsible FAQ -->
+  <hr />
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <div class="faq-question">What is JavaScript?</div>
+    <div class="faq-answer hidden">
+      JavaScript is a programming language that allows you to create interactive web pages.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">What is an event listener?</div>
+    <div class="faq-answer hidden">
+      An event listener is code that waits for an event to happen, like a click or a key press, and then runs a function.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Why use DOM manipulation?</div>
+    <div class="faq-answer hidden">
+      DOM manipulation lets you dynamically change the content, structure, or style of your web page using JavaScript.
+    </div>
+  </div>
+
+  <!-- Part3: Form staff! -->
+   <hr />
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+    <div class="form-group">
+        <label for="fullName">Name:</label>
+        <input type="text" id="fullName" name="fullName" />
+        <small class="error-message hidden"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <small class="error-message hidden"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <small class="error-message hidden"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" />
+        <small class="error-message hidden"></small>
+    </div>
+
+    <button type="submit">Register</button>
+    <p id="formSuccess" class="hidden" style="color:green; font-weight:bold; margin-top:10px;"></p>
+    </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

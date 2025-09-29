@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.5;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#hoverBox {
+  margin-top: 20px;
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#greeting {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode #hoverBox {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+/* FAQ styles */
+.faq-item {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-answer {
+  margin-top: 8px;
+  padding-left: 10px;
+  border-left: 3px solid #007BFF;
+}
+
+
+/* Form style */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 8px;
+  width: 250px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 3px;
+  display: block;
+}
+
